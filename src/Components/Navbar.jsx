@@ -38,7 +38,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item  ">
-                <Link className=" button-73" to="/general">
+                <Link className=" button-73 mx-1 my-1" to="/general">
                   General{" "}
                 </Link>
               </li>

@@ -18,8 +18,8 @@ export default function NewsItem(props) {
         >
           {source.name}
         </span>
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}...</p>
+        <h5 className="card-title">{title}...</h5>
+        <p className="card-text">{description}</p>
         <p className="card-text">Author : {author}</p>
         <p className="card-text">
           <small className="text-muted">
