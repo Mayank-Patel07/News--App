@@ -13,8 +13,7 @@ export default function NewsComponent(props) {
   const Fetching_Data_From_Server = async () => {
     setProgress(0);
     // let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY2}&page=${page}&pageSize=${pageSize}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY1}&page=${page}&pageSize=${pageSize}`;
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=b216979c955a48e48508a99cac539d27&page=${page}&pageSize=${pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY1}&page=${page}&pageSize=${pageSize}`;
     setProgress(30);
     let data = await fetch(url);
     let newdata = await data.json();
@@ -33,8 +32,7 @@ export default function NewsComponent(props) {
     // let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY2}&page=${
     //   page + 1
     // }&pageSize=${pageSize}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY1}&page=${page+1}&pageSize=${pageSize}`;
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=b216979c955a48e48508a99cac539d27&page=${page+1}&pageSize=${pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY1}&page=${page+1}&pageSize=${pageSize}`;
     setPage(page + 1);
     let data = await fetch(url);
     let newdata = await data.json();
@@ -70,8 +68,16 @@ export default function NewsComponent(props) {
               return (
                 <div className="col-md-4" key={url ? url : title}>
                   <NewsItem
-                    title={title.slice(0, 70) ? title.slice(0, 70) : "Title is not available"}
-                    description={description ? description.slice(0, 70) : "Description is not available"}
+                    title={
+                      title.slice(0, 70)
+                        ? title.slice(0, 70)
+                        : "Title is not available"
+                    }
+                    description={
+                      description
+                        ? description.slice(0, 70)
+                        : "Description is not available"
+                    }
                     // time={publishedAt.slice(0, 10)}
                     time={new Date(publishedAt).toGMTString().slice(0, 26)}
                     colorname={colorname}
