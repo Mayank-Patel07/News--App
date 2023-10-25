@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function NewsItem(props) {
+  
   let { title, description, urlToImage, url, author, time, colorname, source } =
     props;
   return (

@@ -92,11 +92,14 @@ body {
 
 .button-73 {
   appearance: none;
+  box-shadow: 10px 10px 5px 0px rgba(12, 11, 11, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(20, 9, 9, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(21, 11, 11, 0.75);
   font-size: 12px;
   background-color: #FFFFFF;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
+  /* box-shadow: #ADCFFF 0 -12px 6px inset; */
   box-sizing: border-box;
   margin: 0, 2px;
   color: #000000;
@@ -118,9 +121,9 @@ body {
 }
 
 .button-73:hover {
-  background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgb(53, 53, 231) 35%, rgba(0, 212, 255, 1) 100%);
-  box-shadow: rgb(19, 19, 152) 0 -6px 8px inset;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  box-shadow: rgb(152, 94, 19) 0 -6px 8px inset;
   color: white;
   transform: scale(1.125);
 

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import NewsComponent from "./Components/NewsComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 export default function App() {
+  // This state is used show a progress bar or loading
   const [progress, setProgress] = useState(0);
 
   return (
